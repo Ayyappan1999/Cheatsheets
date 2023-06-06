@@ -47,25 +47,5 @@ The package contains a tool for gathering subdomain names, e-mail addresses, vir
 | --exclude <source>      | Exclude specific sources    |
 |                         | from the search             |
 +-------------------------+-----------------------------+
-| --source_file <file>    | Specify a file containing   |
-|                         | a list of sources to use    |
-+-------------------------+-----------------------------+
-| --user_agent <agent>    | Set a custom user agent     |
-+-------------------------+-----------------------------+
-| --dns_lookup            | Perform DNS lookup on the   |
-|                         | target domain               |
-+-------------------------+-----------------------------+
-| --virtual_hosting       | Use virtual hosting         |
-+-------------------------+-----------------------------+
-| --shodan_api <API_key>  | Use a Shodan API key for    |
-|                         | enumeration (requires       |
-|                         | Shodan module)              |
-+-------------------------+-----------------------------+
-| --hunter_api <API_key>  | Use a Hunter.io API key for  |
-|                         | email enumeration           |
-+-------------------------+-----------------------------+
-| --version               | Show theHarvester version   |
-+-------------------------+-----------------------------+
-| --help                  | Show help menu              |
-+-------------------------+-----------------------------+
+
 </pre>
