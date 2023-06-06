@@ -1,4 +1,5 @@
 # SHERLOCK
+
 Certainly! Here's a cheatsheet for the Sherlock tool, a popular OSINT (Open Source Intelligence) tool used for username and email address enumeration across various online platforms:
 
 ```
