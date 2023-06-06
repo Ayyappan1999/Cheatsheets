@@ -49,13 +49,13 @@ Google Dorking / Hacking Database
 | inurl:robots.txt        | Find websites' robots.txt   |
 |                         | file                        |
 +-------------------------+-----------------------------+
-| info:example.com 	      | Get information about a     |
-|			                    | specific website            |
+| info:example.com 	  | Get information about a     |
+|			  | specific website            |
 +-------------------------------------------------------+
 | allintext:"keyword"     | Search for pages with a     |
 |                         | specific keyword in text    |
 +-------------------------+-----------------------------+
-| allinurl:"keyword" 	    | Search for pages with a     |
-|			                    | specific keyword in URL     |
+| allinurl:"keyword" 	  | Search for pages with a     |
+|			  | specific keyword in URL     |
 +-------------------------------------------------------+
 </pre>
