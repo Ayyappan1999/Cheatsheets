@@ -62,4 +62,20 @@ Certainly! Here's a cheatsheet for the `dnsrecon` tool, a powerful DNS enumerati
 +-------------------------+-----------------------------+
 ```
 
+```
+| Command                                      | Description                                                             |
+|----------------------------------------------|-------------------------------------------------------------------------|
+| `dnsrecon -d <domain>`                        | Perform a basic DNS reconnaissance on the specified domain.              |
+| `dnsrecon -t rvl -d <domain>`                  | Perform a reverse lookup on the specified domain.                        |
+| `dnsrecon -t axfr -d <domain>`                 | Attempt an AXFR zone transfer on the specified domain.                   |
+| `dnsrecon -t brt -d <domain>`                  | Perform a brute force enumeration of DNS subdomains.                     |
+| `dnsrecon -t srv -d <domain>`                  | Enumerate DNS SRV records for the specified domain.                       |
+| `dnsrecon -t std -d <domain>`                  | Perform a standard DNS enumeration on the specified domain.              |
+| `dnsrecon -t zonewalk -d <domain>`             | Perform a DNS zone walk on the specified domain (if zone transfer allowed). |
+| `dnsrecon -t rvl -D <ip_list_file>`            | Perform reverse DNS lookups on a list of IP addresses from a file.        |
+| `dnsrecon -t rvl -f <ip_range>`                | Perform reverse DNS lookups on an IP address range.                       |
+| `dnsrecon -t axfr -n <nameserver> -d <domain>` | Attempt an AXFR zone transfer using a specific nameserver.                |
+```
+
 These are the commonly used commands and options for the `dnsrecon` tool. Use them to perform comprehensive DNS enumeration, information gathering, and brute-forcing operations on domains, IP addresses, and DNS zones.
+
