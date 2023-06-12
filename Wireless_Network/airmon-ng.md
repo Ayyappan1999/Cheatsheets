@@ -1,39 +1,23 @@
-Certainly! Here's a cheatsheet for BetterCAP:
+Here's a cheatsheet for airmon-ng:
 
-| Command                                           | Description                                               |
-|---------------------------------------------------|-----------------------------------------------------------|
-| `bettercap`                                       | Start BetterCAP.                                          |
-| `set <option> <value>`                            | Set a specific option to a value.                         |
-| `show <option>`                                   | Show the current value of a specific option.              |
-| `help`                                            | Display the help menu.                                    |
-| `help <command>`                                  | Display help for a specific command.                      |
-| `show interfaces`                                 | Show available network interfaces.                        |
-| `set interface <interface>`                       | Set the network interface to use.                         |
-| `show targets`                                    | Show currently targeted hosts.                            |
-| `target <host>`                                   | Target a specific host.                                   |
-| `mitm on`                                         | Enable Man-in-the-Middle (MITM) attacks.                  |
-| `mitm off`                                        | Disable Man-in-the-Middle (MITM) attacks.                 |
-| `show modules`                                    | Show available modules.                                   |
-| `use <module>`                                    | Select a module for use.                                  |
-| `show options`                                    | Show available options for the selected module.           |
-| `set <option> <value>`                            | Set a specific option to a value for the selected module. |
-| `run`                                             | Run the selected module.                                  |
-| `set arp.spoof.targets <target>`                   | Set the target for ARP spoofing.                          |
-| `set dns.spoof.hosts <target> <redirect>`          | Set the target for DNS spoofing and redirect URL.         |
-| `set sslstrip.http_only true`                     | Enable HTTP-only SSL stripping.                           |
-| `set sslstrip.hsts_bypass true`                   | Enable HSTS bypass for SSL stripping.                     |
-| `set sslstrip.strip_all true`                     | Strip SSL from all connections.                           |
-| `set dns.spoof.enabled true`                      | Enable DNS spoofing.                                      |
-| `set dns.spoof.domains <domains>`                  | Set the domains to spoof for DNS spoofing.                |
-| `set dns.spoof.ip <ip>`                           | Set the IP address to redirect for DNS spoofing.          |
-| `set dns.spoof.ttl <ttl>`                         | Set the TTL (Time to Live) value for DNS responses.       |
-| `net.probe on`                                    | Enable network probing.                                   |
-| `net.probe off`                                   | Disable network probing.                                  |
-| `http.proxy on`                                   | Enable HTTP proxy.                                        |
-| `http.proxy off`                                  | Disable HTTP proxy.                                       |
-| `http.proxy.sslstrip on`                          | Enable SSL stripping for HTTP proxy.                      |
-| `http.proxy.sslstrip off`                         | Disable SSL stripping for HTTP proxy.                     |
-| `http.proxy.sslstrip.bypass_certs <certs_list>`    | Bypass SSL certificates for specific domains.             |
-| `net.recon on`                                    | Enable network reconnaissance.                            |
-| `net.recon off`                                   | Disable network reconnaissance.                           |
-| `exit`                                            | Exit BetterCAP.                                           |
+| Command                                          | Description                                                             |
+|--------------------------------------------------|-------------------------------------------------------------------------|
+| `airmon-ng start <interface>`                    | Start monitor mode on the specified wireless interface.                 |
+| `airmon-ng stop <interface>`                     | Stop monitor mode on the specified wireless interface.                  |
+| `airmon-ng check`                                | Check for interfering processes before starting monitor mode.           |
+| `airmon-ng check kill`                           | Kill interfering processes before starting monitor mode.                |
+| `airmon-ng check none`                           | Disable interfering process check.                                      |
+| `airmon-ng status`                               | Show the status of wireless interfaces and monitor mode.                |
+| `airodump-ng <interface>`                        | Capture and display wireless network information.                       |
+| `airodump-ng --channel <channel> <interface>`    | Capture wireless network information on a specific channel.              |
+| `airodump-ng --bssid <BSSID> <interface>`        | Capture wireless network information for a specific BSSID.               |
+| `airodump-ng --essid <ESSID> <interface>`        | Capture wireless network information for a specific ESSID.               |
+| `airodump-ng --essid <ESSID> --channel <channel> <interface>` | Capture wireless network information for a specific ESSID on a specific channel. |
+| `aireplay-ng -0 <count> -a <BSSID> -c <client> <interface>` | Send deauthentication packets to a client on a specific network.    |
+| `aireplay-ng -1 0 -e <ESSID> -a <BSSID> -h <spoofed_MAC> <interface>` | Fake authentication with a specific network using a spoofed MAC address.    |
+| `aireplay-ng -2 -b <BSSID> -h <spoofed_MAC> <interface>` | Perform a full handshake capture on a specific network using a spoofed MAC address. |
+| `aireplay-ng -3 -b <BSSID> -h <spoofed_MAC> <interface>` | Perform an ARP request replay attack on a specific network using a spoofed MAC address. |
+| `aireplay-ng -4 -b <BSSID> -h <spoofed_MAC> <interface>` | Perform an ARP injection attack on a specific network using a spoofed MAC address. |
+| `aireplay-ng -5 -b <BSSID> -h <spoofed_MAC> <interface>` | Perform a client-less deauthentication attack on a specific network using a spoofed MAC address. |
+| `aireplay-ng -6 -b <BSSID> -h <spoofed_MAC> <interface>` | Perform an interactive packet replay attack on a specific network using a spoofed MAC address. |
+| `aireplay-ng -9 -e <ESSID> -a <BSSID> -h <spoofed_MAC> <interface>` | Perform an encrypted WEP packet recovery attack on a specific network using a spoofed MAC address. |
